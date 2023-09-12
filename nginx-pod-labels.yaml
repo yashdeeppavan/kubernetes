@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: yash-pod
+  name: pavan-pod
   label:
     app: nginx
     env: dev
@@ -12,11 +12,11 @@ spec:
     - name: nginx
       image: nginx:1.25
       ports:
-        - containersPort: 80
+        - containerPort: 80
           protocol: TCP
 
     - name: jenkins
       image: jenkins/jenkins:jdk17
       ports:
-        - containersPort: 8080
+        - containerPort: 8080
           protocol: TCP      
