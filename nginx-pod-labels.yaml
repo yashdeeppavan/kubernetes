@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: hello-pod
+  name: pavan-pod
   labels:
     app: nginx
     env: dev
@@ -14,7 +14,7 @@ spec:
       ports:
         - containerPort: 80
           protocol: TCP
-          
+
     - name: jenkins
       image: jenkins/jenkins:jdk17
       ports:
