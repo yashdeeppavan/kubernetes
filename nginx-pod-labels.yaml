@@ -3,7 +3,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: pavan-pod
-  labels:
+  label:
     app: nginx
     env: dev
     release: v1.1
