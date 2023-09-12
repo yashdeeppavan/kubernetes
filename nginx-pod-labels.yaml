@@ -12,11 +12,11 @@ spec:
     - name: nginx
       image: nginx:1.25
       ports:
-        - containerPort: 80
+        - containersPort: 80
           protocol: TCP
 
     - name: jenkins
       image: jenkins/jenkins:jdk17
       ports:
-        - containerPort: 8080
+        - containersPort: 8080
           protocol: TCP      
