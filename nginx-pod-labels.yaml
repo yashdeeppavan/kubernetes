@@ -1,3 +1,4 @@
+---
 apiVersion: v1
 kind: Pod
 metadata:
@@ -13,10 +14,9 @@ spec:
       ports:
         - containerPort: 80
           protocol: TCP
-
+          
     - name: jenkins
-      image: jenkins/jenkins: jdk17
+      image: jenkins/jenkins:jdk17
       ports:
         - containerPort: 8080
-          protocol: TCP
-                
+          protocol: TCP      
